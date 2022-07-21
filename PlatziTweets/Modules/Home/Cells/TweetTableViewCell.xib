@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="530" id="KGk-i7-Jjw" customClass="TweetTableViewCell" customModule="PlatziTweets" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="448" height="530"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="448" height="530"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="UqH-Ig-hhg">
+                        <rect key="frame" x="20" y="20" width="408" height="490"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Maria Paz" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I1A-km-8Vg">
+                                <rect key="frame" x="0.0" y="0.0" width="79.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@MariaPaz21" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U78-S1-bzb">
+                                <rect key="frame" x="0.0" y="61" width="70" height="13.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" systemColor="scrollViewTexturedBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tweet del Desarrollador" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3F9-Wy-EAg">
+                                <rect key="frame" x="0.0" y="115" width="408" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qej-aE-LwY">
+                                <rect key="frame" x="0.0" y="173.5" width="408" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="vFO-AY-BMq"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WpY-Ul-6H9">
+                                <rect key="frame" x="0.0" y="414" width="408" height="22"/>
+                                <color key="tintColor" systemColor="systemGreenColor"/>
+                                <state key="normal" title="Ver Video" image="video.fill" catalog="system">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="openVideoAction" destination="KGk-i7-Jjw" eventType="touchUpInside" id="pgu-C9-QWU"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="01/01/01" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rtz-o0-IrQ">
+                                <rect key="frame" x="0.0" y="476.5" width="43.5" height="13.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" systemColor="scrollViewTexturedBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="WpY-Ul-6H9" firstAttribute="leading" secondItem="UqH-Ig-hhg" secondAttribute="leading" id="AQ0-Je-83B"/>
+                            <constraint firstItem="3F9-Wy-EAg" firstAttribute="leading" secondItem="UqH-Ig-hhg" secondAttribute="leading" id="Vkr-aX-fBd"/>
+                            <constraint firstAttribute="trailing" secondItem="3F9-Wy-EAg" secondAttribute="trailing" id="ZlY-Sh-Y82"/>
+                            <constraint firstAttribute="trailing" secondItem="WpY-Ul-6H9" secondAttribute="trailing" id="gkZ-LD-BAq"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="UqH-Ig-hhg" secondAttribute="trailing" constant="20" id="47n-sb-shQ"/>
+                    <constraint firstItem="UqH-Ig-hhg" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="SeE-Gx-RWM"/>
+                    <constraint firstItem="UqH-Ig-hhg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="fbd-Tg-PG4"/>
+                    <constraint firstAttribute="bottom" secondItem="UqH-Ig-hhg" secondAttribute="bottom" constant="20" id="gyA-5p-WQJ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="DateLabel" destination="rtz-o0-IrQ" id="JYY-iy-TeI"/>
+                <outlet property="TweetImageView" destination="qej-aE-LwY" id="MjU-ap-etO"/>
+                <outlet property="VideoButton" destination="WpY-Ul-6H9" id="Aa7-tK-PMB"/>
+                <outlet property="messageLabel" destination="3F9-Wy-EAg" id="VFc-zj-c2B"/>
+                <outlet property="nameLabel" destination="I1A-km-8Vg" id="qx4-uT-aeZ"/>
+                <outlet property="nicknamaLabel" destination="U78-S1-bzb" id="wX3-Vs-lyH"/>
+            </connections>
+            <point key="canvasLocation" x="224.63768115942031" y="289.28571428571428"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="video.fill" catalog="system" width="128" height="82"/>
+        <systemColor name="scrollViewTexturedBackgroundColor">
+            <color red="0.43529411764705878" green="0.44313725490196082" blue="0.47450980392156861" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
